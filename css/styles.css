@@ -10,41 +10,27 @@
 
   --main-txt-cl: #212121;
   --secondary-txt-cl: #757575;
-  --main-cl-title: #ffffff;
+  --light-txt-cl: #ffffff;
   --accent-cl: #2196f3;
 
-  --logo-main-cl: #2196f3;
   --logo-upperhalf-cl: #000000;
   --logo-lowerhalf-cl: #ffffff;
 
-  --contact-adress-cl: #ffffff;
-  --mail-tel-cl: rgba(255, 255, 255, 0.6);
-
-  --button-hover-cl: #ffffff;
-
-  --about-item-cl: #ffffff;
-
-  --overlay-description: #ffffff;
+  --header-contacts-cl: rgba(255, 255, 255, 0.6);
 
   /* background colors */
 
-  --header-bg-cl: #ffffff;
-  --hero-footer-bg: #2f303a;
-  --benefit-icon-bg: #f5f4fa;
-  --team-bg-cl: #f5f4fa;
-  --team-wrap-bg: #ffffff;
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #ffffff;
+  --secondary-bg-cl: #f5f4fa;
+
   --main-icon-cl: #afb1b8;
-  --footer-socials-icon: #ffffff;
+  --light-icon-cl: #ffffff;
+
   --footer-socials-bg: rgba(255, 255, 255, 0.1);
-
-  --button-bg-cl: #f5f4fa;
-
   --about-item-bg: rgba(47, 48, 58, 0.8);
-
-  --modal-backdrop: rgba(0, 0, 0, 0.2);
-  --modal-background: #ffffff;
-
   --overlay-bg: rgba(33, 150, 243, 0.9);
+  --modal-backdrop: rgba(0, 0, 0, 0.2);
 
   /*  border colors */
 
@@ -126,7 +112,7 @@ body {
   margin: 0 auto;
   border-bottom: 1px solid var(--header-border);
 
-  background-color: var(--header-bg-cl);
+  background-color: var(--light-bg-cl);
 }
 
 .header-container {
@@ -149,7 +135,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: var(--logo-main-cl);
+  color: var(--accent-cl);
 }
 
 .header-logo {
@@ -245,7 +231,7 @@ body {
   padding: 200px 0;
   margin: 0 auto;
 
-  background-color: var(--hero-footer-bg);
+  background-color: var(--dark-bg-cl);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/hero-background.jpg);
   background-position: center;
@@ -265,7 +251,7 @@ body {
 
   margin: 0 auto 30px;
 
-  color: var(--main-cl-title);
+  color: var(--light-txt-cl);
 }
 
 .hero-btn {
@@ -280,7 +266,7 @@ body {
   border-radius: 4px;
   padding: 10px 32px;
 
-  color: var(--main-cl-title);
+  color: var(--light-txt-cl);
   background-color: var(--accent-cl);
 }
 
@@ -301,7 +287,7 @@ body {
 
   margin-bottom: 30px;
 
-  background-color: var(--benefit-icon-bg);
+  background-color: var(--secondary-bg-cl);
 }
 
 .benefits-list-title {
@@ -365,7 +351,7 @@ body {
   height: 70px;
   width: 100%;
 
-  color: var(--about-item-cl);
+  color: var(--light-txt-cl);
   background-color: var(--about-item-bg);
 }
 
@@ -376,7 +362,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 
-  background-color: var(--team-bg-cl);
+  background-color: var(--secondary-bg-cl);
 }
 
 .team-title {
@@ -399,7 +385,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  background-color: var(--team-wrap-bg);
+  background-color: var(--light-bg-cl);
 }
 
 .team-wrap {
@@ -454,7 +440,7 @@ body {
 
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
-  fill: var(--team-wrap-bg);
+  fill: var(--light-icon-cl);
 }
 
 /* clients section */
@@ -509,11 +495,9 @@ body {
 /* footer section */
 
 .footer {
-  max-width: 1600px;
   padding: 60px 0;
-  margin: 0 auto;
 
-  background-color: var(--hero-footer-bg);
+  background-color: var(--dark-bg-cl);
 }
 
 .footer-container {
@@ -538,7 +522,7 @@ body {
   letter-spacing: 0.03em;
   width: 231px;
 
-  color: var(--mail-tel-cl);
+  color: var(--header-contacts-cl);
 }
 
 .footer-contacts-list {
@@ -548,7 +532,7 @@ body {
 }
 
 .location {
-  color: var(--contact-adress-cl);
+  color: var(--light-txt-cl);
 }
 
 .footer-contacts-link {
@@ -573,7 +557,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--contact-adress-cl);
+  color: var(--light-txt-cl);
 }
 
 .footer-socials-list {
@@ -601,7 +585,7 @@ body {
 }
 
 .footer-socials-icon {
-  fill: var(--footer-socials-icon);
+  fill: var(--light-icon-cl);
   transition: fill var(--main-animation);
 }
 
@@ -632,7 +616,7 @@ body {
   transition: box-shadow var(--main-animation), color var(--main-animation),
     background var(--main-animation);
 
-  background-color: var(--button-bg-cl);
+  background-color: var(--secondary-bg-cl);
 }
 
 .portfolio-btn:hover,
@@ -640,7 +624,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 
-  color: var(--button-hover-cl);
+  color: var(--light-txt-cl);
   background-color: var(--accent-cl);
 }
 
@@ -691,7 +675,7 @@ body {
   line-height: 1.55;
   letter-spacing: 0.03em;
 
-  color: var(--overlay-description);
+  color: var(--light-txt-cl);
 }
 
 .portfolio-wrap {
@@ -763,7 +747,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  background-color: var(--modal-background);
+  background-color: var(--light-bg-cl);
 }
 
 .modal-btn {
